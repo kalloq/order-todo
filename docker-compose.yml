@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  todo:
+    build:
+      context: ./app_todo
+    ports:
+      - "8000:8000"
+
+  order:
+    build:
+      context: ./app_order
+    ports:
+      - "8001:8001"
